@@ -54,8 +54,6 @@ The master node needs permission to start workers, read CloudWatch metrics, invo
 5. **Role name:** `MasterInstanceProfile`. It must match `AWS_MASTER_IAM_PROFILE` in your `.env`.
 6. Click **Create role**.
 
-<!-- TODO: if the master reads request metrics from DynamoDB, also attach AmazonDynamoDBReadOnlyAccess here. -->
-
 ### Step B: Allow the master to pass the worker role
 
 The master attaches the worker role to the instances it starts. That needs an inline policy.
