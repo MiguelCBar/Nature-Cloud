@@ -1,0 +1,15 @@
+# Secrets
+.env
+*.pem
+*.key
+
+# Runtime state written by the deploy scripts
+scripts/**/*.id
+scripts/**/*.dns
+
+# Metrics written by the workers at runtime
+metrics-output/
+metrics.jsonl
+
+# Build output
+target/
